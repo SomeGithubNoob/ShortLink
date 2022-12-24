@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Shortlink",
+  "description": "Link to simplify web browsing",
+  "version": "1.0",
+  "omnibox": { "keyword": "sl" },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup/popup.html",
+    "default_title": "Open ShortLink"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "storage"
+  ],
+  "icons": {
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  }
+}
